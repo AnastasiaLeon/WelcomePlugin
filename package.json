@@ -1,0 +1,23 @@
+{
+  "name": "welcome-plugin",
+  "displayName": "Welcome Plugin",
+  "description": "A simple plugin that greets the user",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "welcome-plugin.sayHello",
+        "title": "Say Hello"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0"
+  }
+}
